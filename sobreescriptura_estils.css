@@ -1,0 +1,54 @@
+/*1. color general de la lletra negra*/
+
+*{
+    color:black;
+}
+
+/*2. titol nivell 1 fons blanc lletra gris*/
+
+h1{
+    background-color:white;
+    color:grey;
+}
+
+/*3. tots els strong en color verd i subratllats*/
+
+strong{
+    color:green;
+    text-decoration:underline;
+}
+/*4. enllaços del paràgraf2 en italica*/
+.paragraf2{
+    font-style:italic;
+}
+
+/*5. footer general del web centrat i lletra de 10px*/
+h3 ~ footer{
+    position:relative;
+    margin:auto;
+    text-align:center;
+    font-size:10px;
+}
+/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
+
+/*a) L'únic element que cambía es el primer <strong>, la raó d'això es perquè en la fulla d'estils #estils_incials.css em declarat que totes les etiquetes <strong>
+ tinguin el color rosa i sense subratllar, en canvi a la nova fulla d'etils que em creat #sobreescriptura_estils.css declarem que les etiquetes strong siguien de 
+ color verd i a més estiguin subratllades.En css quan hi han dos etiquetes on es declaren les mateixes clases, la clase que queda predefinida es l'ultima declarada, 
+ per tant al anant cambiant l'ordre de declaració de les etiquetes <link>, l'etiqueta que es declari última es la que es quedará el seu estil strong declarat en la pàgina. */
+
+ /*b) En aquest cas ho faría de la següent manera.Aplicaría una clase en la página principal amb el color rosa sense el subratllat en les diferents etiquetes <strong> que hi ha declarades
+  Sería aplicar aquest estil del strong en les dues fulles d'estils que hi tenim declarades en la página: 
+  
+  strong.estil {
+    color:#be0380;
+
+    D’altra banda, tingues en compte que per obtenir la màxima nota cal fer servir almenys un/a:
+
+        Selector per id: container (Creat a "estils_inicials.css)
+        Selector per classe : .paragraf2 (Creat a "sobreescriptura_estils.css")
+        Selector per etiqueta. footer (Creat a "sobreescriptura_estils.css")
+        Espai per seleccionar un child : .paragraf2 strong (Creat a "estils_inicials.css")
+        Coma per seleccionar dos elements alhora. h1,h2,h3 (Creat a estils_inicials.css)
+        Child o sibling selector (>, +, ~) (només un d’ells) : h3 ~ footer (Creat a sobreescriptura_estils.css)
+
+}*/
